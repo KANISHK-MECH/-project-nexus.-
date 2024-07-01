@@ -1,0 +1,104 @@
+/* /mnt/data/styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+}
+
+.container {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    width: 100%;
+}
+
+.form-toggle {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.form-toggle button {
+    background: none;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.form-toggle button:focus {
+    outline: none;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.form input {
+    margin-bottom: 1em;
+    padding: 0.8em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form button {
+    padding: 0.8em;
+    border: none;
+    border-radius: 5px;
+    background: #6e8efb;
+    color: white;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #a777e3;
+}
+
+.error-message {
+    color: red;
+    text-align: center;
+}
+
+.password-strength {
+    margin-bottom: 1em;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.weak {
+    background-color: red;
+    width: 25%;
+}
+
+.medium {
+    background-color: orange;
+    width: 50%;
+}
+
+.strong {
+    background-color: green;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1em;
+    }
+}
